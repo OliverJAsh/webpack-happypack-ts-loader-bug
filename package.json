@@ -1,0 +1,19 @@
+{
+  "name": "webpack-happypack-ts-loader-bug",
+  "private": true,
+  "scripts": {
+    "compile": "rm -rf ./config/target/ && tsc --project config && rm -rf ./target/ && webpack --config config/target/webpack.config.js",
+    "compile:watch": " npm run compile -- --watch"
+  },
+  "dependencies": {
+    "@types/happypack": "^5.0.0",
+    "@types/webpack": "^4.41.13",
+    "happypack": "^5.0.1",
+    "prettier": "^2.0.5",
+    "ts-loader": "^7.0.5",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "typescript": "^3.9.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
